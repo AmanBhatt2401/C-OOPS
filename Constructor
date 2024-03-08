@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Student{
+    private:
+    char name[20];
+    int rollno;
+    char gender;
+    float height;
+    float weight;
+    public:
+    Student();
+    void getdata();
+    void display();
+};
+Student::Student (){}
+ void Student::getdata(){   
+    cout<<"Enter the Name:";
+    cin>>name;
+    cout<<"Enter the Roll No:";
+    cin>>rollno;
+    cout<<"Enter the Gender:";
+    cin>>gender;
+    cout<<"Enter the Height:";
+    cin>>height;
+    cout<<"Enter the Weight:";
+    cin>>weight;
+}
+void Student::display()
+{
+    cout<<"Name:"<<name<<endl;
+    cout<<"Roll No:"<<rollno<<endl;
+    cout<<"Gender:"<<gender<<endl;
+    cout<<"Height:"<<height<<endl;
+    cout<<"Weight:"<<weight<<endl;
+}
+int main(){
+    Student a;
+    cout<<"Enter the Details of the Student"<<endl;
+    a.getdata();
+    cout<<"The details of Students are:"<<endl;
+    a.display();
+    return 0;
+}
