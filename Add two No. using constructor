@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class sum
+{
+    private:
+    int add,n1,n2;
+    public:
+    sum();//constructor declare
+    void calculate();
+    void display();
+};
+sum::sum() //constructor called
+{
+    cout<<"Enter the first Number:";
+    cin>>n1;
+    cout<<"Enter the second Number:";
+    cin>>n2;
+}
+void sum::calculate()
+{
+     add=0;
+    add=n1+n2;
+}
+void sum::display()
+{
+    cout<<"The sum is:"<<add;
+}
+
+int main()
+{
+    sum s;
+    s.calculate();
+    s.display();
+    
+    return 0;
+}
